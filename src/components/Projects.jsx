@@ -56,7 +56,7 @@ export default function Projects() {
         <ProjectCard
           title="Project 2"
           subtitle="Immersive Installation"
-          imageSrc="/project2.jpg"
+          imageSrc="/project2.JPG"
           videoSrc="/project2.mp4"
           onClick={() => navigate('/project2')}
         />
@@ -64,7 +64,7 @@ export default function Projects() {
         <ProjectCard
           title="Project 3"
           subtitle="Generative Particle System"
-          imageSrc="/project3.jpg"
+          imageSrc="/project3.JPG"
           videoSrc="/project3.mp4"
           onClick={() => navigate('/project3')}
         />
