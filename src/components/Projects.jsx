@@ -49,23 +49,23 @@ export default function Projects() {
           title="Project 1"
           subtitle="Interactive WebGL Experience"
           imageSrc="/project1.jpg"
-          videoSrc="/public/project1.mp4"
+          videoSrc="/project1.mp4"
           onClick={() => navigate('/project1')}
         />
 
         <ProjectCard
           title="Project 2"
           subtitle="Immersive Installation"
-          imageSrc="/public/project2.jpg"
-          videoSrc="/public/project2.mp4"
+          imageSrc="/project2.jpg"
+          videoSrc="/project2.mp4"
           onClick={() => navigate('/project2')}
         />
 
         <ProjectCard
           title="Project 3"
           subtitle="Generative Particle System"
-          imageSrc="/public/project3.jpg"
-          videoSrc="/public/project3.mp4"
+          imageSrc="/project3.jpg"
+          videoSrc="/project3.mp4"
           onClick={() => navigate('/project3')}
         />
       </div>
