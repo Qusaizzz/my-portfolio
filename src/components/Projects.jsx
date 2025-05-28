@@ -48,7 +48,7 @@ export default function Projects() {
         <ProjectCard
           title="Project 1"
           subtitle="Interactive WebGL Experience"
-          imageSrc="/public/project1.jpg"
+          imageSrc="/project1.jpg"
           videoSrc="/public/project1.mp4"
           onClick={() => navigate('/project1')}
         />
