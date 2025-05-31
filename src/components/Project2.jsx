@@ -102,7 +102,7 @@ export default function Project1() {
         </div>
       </section>
 
-    {/* Video Section */}
+    {/* Video Section - video1 */}
 <section
   style={{
     width: '100%',
@@ -118,7 +118,7 @@ export default function Project1() {
     aspectRatio: '16 / 9',
   }}
 >
-  {/* Video */}
+  {/* Video1 */}
   <video
     ref={videoRef}
     src="/ARex.mp4"
@@ -321,7 +321,7 @@ export default function Project1() {
   </div>
 </section>
 
-{/* Title & Description Section - aligned at the top */}
+{/* Title & Description 2 Section - aligned at the top */}
       <section
         style={{
           padding: '2rem 4vw',
@@ -349,92 +349,38 @@ export default function Project1() {
         </div>
       </section>
 
-       {/* Video Section */}
-<section
-  style={{
-    width: '100%',
-    maxWidth: '1200px',
-    position: 'relative',
-    backgroundColor: '#fff',
-    flexShrink: 0,
-    marginTop: '2rem',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    marginBottom: '1rem', // ✅ Add this line!
-    overflow: 'hidden',
-    aspectRatio: '16 / 9',
-  }}
->
-  {/* Video */}
-  <video
-    ref={videoRef}
-    src="/exi.mp4"
-    muted={false}
-    loop={false}
-    poster="exi1.jpg"
-    style={{
-      width: '100%',
-      height: '100%',
-      objectFit: 'cover',
-      backgroundColor: 'white',
-      cursor: 'pointer',
-    }}
-    onClick={togglePlayPause}
-  />
-
-  {/* Play Button Overlay (center) */}
-  {!isPlaying && (
-    <div
-      onClick={togglePlayPause}
-      style={{
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        cursor: 'pointer',
-        zIndex: 2,
-      }}
-    >
-      <svg
-        width="80"
-        height="80"
-        viewBox="0 0 100 100"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+        {/* New Video Section - Automatic Play */}
+      <section
+        style={{
+          width: '100%',
+          maxWidth: '1200px',
+          position: 'relative',
+          backgroundColor: '#fff',
+          flexShrink: 0,
+          marginTop: '2rem',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          marginBottom: '1rem',
+          overflow: 'hidden',
+          aspectRatio: '16 / 9',
+        }}
       >
-        <circle cx="50" cy="50" r="40" fill="rgba(0,0,0,0.5)" />
-        <polygon points="40,30 70,50 40,70" fill="white" />
-      </svg>
-    </div>
-  )}
+        {/* New Video (AutoPlay) */}
+        <video
+          src="/exi.mp4" // Update with your new video source
+          autoPlay
+          muted
+          loop
+          poster="exi1.jpg" // Update with new poster image
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            backgroundColor: 'white',
+          }}
+        />
+      </section>
 
-  {/* Modern Progress Bar */}
-  <input
-    type="range"
-    min="0"
-    max="100"
-    value={progress}
-    onChange={(e) => {
-      if (videoRef.current) {
-        const seekTime = (e.target.value / 100) * videoRef.current.duration;
-        videoRef.current.currentTime = seekTime;
-      }
-    }}
-    style={{
-      position: 'absolute',
-      bottom: '10px',
-      left: 0,
-      width: '100%',
-      appearance: 'none',
-      height: '4px',
-      background: '#666',
-      outline: 'none',
-      cursor: 'pointer',
-      zIndex: 3,
-      accentColor: '#ff6f00',
-    }}
-  />
-</section>
 
       {/* Footer Section */}
       <section
