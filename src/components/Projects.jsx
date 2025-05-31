@@ -54,10 +54,10 @@ export default function Projects() {
         />
 
         <ProjectCard
-          title="Project 2"
-          subtitle="Immersive Installation"
+          title="'Götterfunken - Europa als Aufgabe' AR Storytelling"
+          subtitle="Unity, 3ds Max, MeshLab"
           imageSrc="/project2.jpg"
-          videoSrc="/project2.mp4"
+          videoSrc="/ARex.mp4"
           onClick={() => navigate('/project2')}
         />
 

@@ -91,7 +91,7 @@ export default function Project1() {
         <div style={{ maxWidth: '500px', marginTop: 0 }}>
           <h1 style={{ fontSize: '3.6rem', marginBottom: '0.5rem' }}>Web-Based AR Experience</h1>
           <p style={{ fontSize: '0.8rem', color: '#aaa' }}>Role: Working Student at GROHE | Digital Content & Experience</p>
-          <p style={{ fontSize: '0.8rem', color: '#aaa' }}>Tools: WebXR, Three.js, 3dsMax</p>
+          <p style={{ fontSize: '0.8rem', color: '#aaa' }}>Tools: WebXR, Three.js, 3ds Max</p>
         </div>
 
         {/* Paragraph next to Title */}
