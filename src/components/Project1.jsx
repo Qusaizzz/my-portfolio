@@ -89,15 +89,15 @@ export default function Project1() {
         }}
       >
         <div style={{ maxWidth: '500px', marginTop: 0 }}>
-          <h1 style={{ fontSize: '3.6rem', marginBottom: '0.5rem' }}>Immersive Light Installation</h1>
-          <p style={{ fontSize: '0.8rem', color: '#aaa' }}>Role: Designer, Developer</p>
-          <p style={{ fontSize: '0.8rem', color: '#aaa' }}>Tools: TouchDesigner, Three.js, Ableton Live</p>
+          <h1 style={{ fontSize: '3.6rem', marginBottom: '0.5rem' }}>Web-Based AR Experience</h1>
+          <p style={{ fontSize: '0.8rem', color: '#aaa' }}>Role: Working Student at GROHE | Digital Content & Experience</p>
+          <p style={{ fontSize: '0.8rem', color: '#aaa' }}>Tools: WebXR, Three.js, 3dsMax</p>
         </div>
 
         {/* Paragraph next to Title */}
-        <div style={{ maxWidth: '600px', color: 'white', lineHeight: '1.6', marginTop: 0 }}>
+        <div style={{ maxWidth: '600px', color: 'white', lineHeight: '2', marginTop: 0 }}>
           <p style={{ fontSize: '0.8rem', marginTop: '3.6rem' }}>
-            Ouchhh created approximately 52 Washington Washington DC, Montreal, São Paulo, Seoul, Roma, Moscow, Prague, Brussels, Hong Kong, Jakarta, Scotland, Singapore, Las Vegas, London, Barcelona, Berlin, etc... for too many festivals and institutes such as Ars Electronica, Cern, Nasa, Google, Signal, iMapp, Mutek, Melbourne Light Festival, Singapore Art and Science Museum, Frost Miami Science Museum, SAT Société des arts technologiques Montreal, Canada National Space Center UK, American Indian Arts, Atelier Des Lumiere, LLUM Light Festival Barcelona and much more DC, Montreal, São Paulo, Seoul, Roma, Moscow, Prague, Brussels, Hong Kong, Jakarta, Scotland, Singapore, Las Vegas, London, Barcelona, Berlin, etc... for too many festivals and institutes such as Ars Electronica, Cern, Nasa, Google, Signal, iMapp, Mutek, Melbourne Light Festival, Singapore Art and Science Museum, Frost Miami Science Museum, SAT Société des arts technologiques Montreal, Canada National Space Center UK, American Indian Arts, Atelier Des Lumiere, LLUM Light Festival Barcelona and much more public  art projects for every continent such as Tokyo, New York, LA, Mexico, Seattle, Chicago, Miami, Abu Dhabi, Milano, Paris, Melbourne, Shanghai, Beijing, Washington DC, Montreal, São Paulo, Seoul, Roma, Moscow, Prague, Brussels, Hong Kong, Jakarta, Scotland, Singapore, Las Vegas, London, Barcelona, Berlin, etc... for too many festivals and institutes such as Ars Electronica, Cern, Nasa, Google, Signal, iMapp, Mutek, Melbourne Light Festival, Singapore Art and Science Museum, Frost Miami Science Museum, SAT Société des arts technologiques  Montreal, Canada National Space Center UK, American Indian Arts, Atelier Des Lumiere, LLUM Light Festival Barcelona and much more
+            This project proposal is an interactive AR experience I developed as a working student at GROHE. The goal was to introduce a "scan and place" feature within GROHE's 360 showrooms, enabling users to visualize products in their own space using augmented reality. Built with WebXR and Three.js, the experience is available instantly through a simple web page, eliminating the need for users to download any apps. While it offers accessibility across different platforms, it's important to note that WebXR is not yet fully supported by iOS, meaning the experience works best on Android devices. This project reflects GROHE's innovative approach to providing immersive experiences to customers.
           </p>
         </div>
       </section>
@@ -206,11 +206,11 @@ export default function Project1() {
         }}
       >
         <div style={{ maxWidth: '500px', marginTop: 0 }}>
-          <h1 style={{ fontSize: '1.6rem', marginBottom: '0.5rem' }}>Concept & Process</h1>
+          <h1 style={{ fontSize: '1.6rem', marginBottom: '0.5rem', fontWeight: '300' }}>Concept & Process</h1>
         </div>
 
         {/* Paragraph next to Title */}
-        <div style={{ maxWidth: '900px', color: 'white', lineHeight: '1.6', marginTop: 0 }}>
+        <div style={{ maxWidth: '900px', color: 'white', lineHeight: '2', marginTop: 0 }}>
           <p style={{ fontSize: '0.8rem', marginTop: '1.5rem' }}>
             Ouchhh created approximately 52 Washington Washington DC, Montreal, São Paulo, Seoul, Roma, Moscow, Prague, Brussels, Hong Kong, Jakarta, Scotland, Singapore, Las Vegas, London, Barcelona, Berlin, etc... for too many festivals and institutes such as Ars Electronica, Cern, Nasa, Google, Signal, iMapp, Mutek, Melbourne Light Festival, Singapore Art and Science Museum, Frost Miami Science Museum, SAT Société des arts technologiques Montreal, Canada National Space Center UK, American Indian Arts, Atelier Des Lumiere, LLUM Light Festival Barcelona and much more DC, Montreal, São Paulo, Seoul, Roma, Moscow, Prague, Brussels, Hong Kong, Jakarta, Scotland, Singapore, Las Vegas, London, Barcelona, Berlin, etc... for too many festivals and institutes such as Ars Electronica, Cern, Nasa, Google, Signal, iMapp, Mutek, Melbourne Light Festival, Singapore Art and Science Museum, Frost Miami Science Museum, SAT Société des arts technologiques Montreal, Canada National Space Center UK, American Indian Arts, Atelier Des Lumiere, LLUM Light Festival Barcelona and much more public  art projects for every continent such as Tokyo, New York, LA, Mexico, Seattle, Chicago, Miami, Abu Dhabi, Milano, Paris, Melbourne, Shanghai, Beijing, Washington DC, Montreal, São Paulo, Seoul, Roma, Moscow, Prague, Brussels, Hong Kong, Jakarta, Scotland, Singapore, Las Vegas, London, Barcelona, Berlin, etc... for too many festivals and institutes such as Ars Electronica, Cern, Nasa, Google, Signal, iMapp, Mutek, Melbourne Light Festival, Singapore Art and Science Museum, Frost Miami Science Museum, SAT Société des arts technologiques  Montreal, Canada National Space Center UK, American Indian Arts, Atelier Des Lumiere, LLUM Light Festival Barcelona and much more
           </p>

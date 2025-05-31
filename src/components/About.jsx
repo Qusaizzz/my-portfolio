@@ -43,9 +43,7 @@ export default function About() {
           position: 'relative'
         }}>
           <p style={{ fontSize: '1rem', lineHeight: '1.9', textAlign: 'left' }}>
-            Hi, I'm Qussai – a designer and immersive experience creator based in Germany.
-            I specialize in interactive 3D environments and real-time design using tools like TouchDesigner and Three.js.
-            I love crafting digital spaces that evoke emotion, reflection, and delight.
+            Hi, I'm Qussai – a designer and immersive experience creator based in Germany. I specialize in spatial UX/UI, interactive 3D environments, and real-time design. I love crafting digital spaces that evoke emotion, reflection, and delight. I'm currently studying a Master's in Design and Interaction at Hochschule Rhein-Waal and working as a working student in digital content and experience at GROHE.
           </p>
         </div>
       </div>

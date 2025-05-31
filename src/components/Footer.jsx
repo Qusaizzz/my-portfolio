@@ -36,12 +36,20 @@ export default function Footer() {
           LinkedIn
         </a>
         <a
-          href="https://www.artstation.com/your-profile"
+          href="https://www.artstation.com/qusaikhador"
           target="_blank"
           rel="noopener noreferrer"
           style={{ color: 'white', textDecoration: 'none' }}
         >
           ArtStation
+        </a>
+        <a
+          href="https://www.behance.net/qussaikhaddour"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: 'white', textDecoration: 'none' }}
+        >
+          Behance
         </a>
       </div>
     </footer>

@@ -46,8 +46,8 @@ export default function Projects() {
         }}
       >
         <ProjectCard
-          title="Project 1"
-          subtitle="Interactive WebGL Experience"
+          title="GROHE's 360 showrooms Web-Based AR Experience"
+          subtitle="WebXR, Three.js, 3dsMax"
           imageSrc="/project1.jpg"
           videoSrc="/project1.mp4"
           onClick={() => navigate('/project1')}
