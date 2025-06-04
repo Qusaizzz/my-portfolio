@@ -365,7 +365,7 @@ export default function Project3() {
         }}
       >
         <Link to="/" style={{ color: 'white', textDecoration: 'none', fontSize: '1.2rem' }}>
-          ⬅ Back to Home
+          ⬅ Home
         </Link>
       </section>
     </div>
