@@ -98,7 +98,7 @@ export default function Project3() {
         {/* Paragraph next to Title */}
         <div style={{ maxWidth: '600px', color: 'white', lineHeight: '2', marginTop: 0 }}>
           <p style={{ fontSize: '0.8rem', marginTop: '2.5rem' }}>
-            Created for the Museum für Naturkunde - Leibniz Institute for Evolution and Biodiversity Science (MfN), this interactive installation invites visitors to experience the evolution of life in a deeply personal way. As users move through the space, their reflection transforms to resemble creatures from various eras in the history of life, starting with ancient life forms from the Paleozoic Era, progressing through the Mesozoic Era and the age of dinosaurs, and evolving into mammals during the Cenozoic Era, moving to the Quaternary Period, the rise of modern humans. In the final stage of the experience (The Future), users encounter their reflection in an undefined shape, which they can interact with and reshape through hand gestures. This immersive experience allows users to feel the passage of time and illustrates the concept that the future is in our hands, emphasizing the profound responsibility we, as humans, have in shaping what comes next for the planet and its creatures.
+            Designed for the Museum für Naturkunde - Leibniz Institute for Evolution and Biodiversity Science (MfN), this interactive installation invites visitors to experience the evolution of life in a deeply personal way. As users move through a straight path, their reflection transforms to resemble creatures from various eras in the history of life, starting with ancient life forms from the Paleozoic Era, progressing through the Mesozoic Era and the age of dinosaurs, and evolving into mammals during the Cenozoic Era, moving to the Quaternary Period, the rise of modern humans. In the final stage of the experience (The Future), users encounter their reflection in an undefined shape, which they can interact with and reshape through hand gestures. This immersive experience allows users to feel the passage of time and illustrates the concept that the future is in our hands, emphasizing the profound responsibility we, as humans, have in shaping what comes next for the planet and its creatures.
           </p>
         </div>
       </section>
@@ -206,13 +206,13 @@ export default function Project3() {
         }}
       >
         <div style={{ maxWidth: '500px', marginTop: 0 }}>
-          <h1 style={{ fontSize: '1.6rem', marginBottom: '0.5rem', fontWeight: '300' }}>Concept & Process</h1>
+          <h1 style={{ fontSize: '1.6rem', marginBottom: '0.5rem', fontWeight: '300' }}>Process</h1>
         </div>
 
         {/* Paragraph next to Title */}
         <div style={{ maxWidth: '900px', color: 'white', lineHeight: '2', marginTop: 0 }}>
           <p style={{ fontSize: '0.8rem', marginTop: '1.5rem' }}>
-            The Kanzel, built in the early 18th century, features symbolic representations of the four evangelists: angel, lion, bull, and eagle. Matthew is depicted as a winged man, symbolizing the gospel's focus on human birth. Mark is a winged lion, reflecting the Baptist’s call in the desert. Luke is represented by a winged bull, referencing Zechariah’s sacrificial service. John is shown as an eagle. This project focused on presenting the original architectur element and highlighting these four symbols, bringing them to life through an interactive AR storytelling. The original Kanzel was scanned, and the point cloud data was converted into a mesh. The lowpoly of the four symbols were animated in 3ds Max, and the final augmented reality experience was created in Unity, with a particle system used to visually narrate the story of the Kanzel, blending historical symbolism with visual storytelling.
+            In this project, I created an interactive particle system experience, I used TouchDesigner to create and test the experience. I integrated Kinect to track the user’s position and enable the dynamic transformation of their reflection as they moved through the installation. I used Leap Motion to capture hand gestures in the last stage of the experience, allowing users to interact with the undefined future form.
           </p>
         </div>
       </section>
@@ -321,33 +321,6 @@ export default function Project3() {
 
 
 
-{/* Title & Description 2 Section - aligned at the top */}
-      <section
-        style={{
-          padding: '2rem 4vw',
-          backgroundColor: '#0a0a0a',
-          width: '100%',
-          textAlign: 'left',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          maxWidth: '1200px',
-          display: 'flex',
-          flexDirection: 'row', // Row layout for side-by-side content
-          justifyContent: 'space-between', // Space between elements
-          alignItems: 'flex-start', // Align items to the top
-        }}
-      >
-        <div style={{ maxWidth: '500px', marginTop: 0 }}>
-          <h1 style={{ fontSize: '1.6rem', marginBottom: '0.5rem', fontWeight: '300' }}>Exhibition</h1>
-        </div>
-
-        {/* Paragraph next to Title */}
-        <div style={{ maxWidth: '900px', color: 'white', lineHeight: '2', marginTop: 0 }}>
-          <p style={{ fontSize: '0.8rem', marginTop: '1.5rem' }}>
-            The exhibition was a collaboration between Hochschule Rhein-Waal and Schirrhof Kamp-Lintfort. Paper images with symbols and the names of the elements were used as image trackers, enabling visitors to access the augmented reality experience.
-          </p>
-        </div>
-      </section>
 
         {/* New Video Section - Automatic Play */}
       <section
@@ -357,7 +330,7 @@ export default function Project3() {
           position: 'relative',
           backgroundColor: '#fff',
           flexShrink: 0,
-          marginTop: '2rem',
+          marginTop: '4rem',
           marginLeft: 'auto',
           marginRight: 'auto',
           marginBottom: '1rem',
