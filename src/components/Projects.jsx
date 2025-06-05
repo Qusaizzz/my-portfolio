@@ -64,7 +64,7 @@ export default function Projects() {
         <ProjectCard
           title="A Journey of Life’s Evolution - Interactive Installation"
           subtitle="Touchdesigner, Interactive Particle System"
-          imageSrc="/project3.jpg"
+          imageSrc="/project33.jpg"
           videoSrc="/project3.mp4"
           onClick={() => navigate('/project3')}
         />
