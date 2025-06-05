@@ -121,7 +121,7 @@ export default function Project1() {
   {/* Video */}
   <video
     ref={videoRef}
-    src="/project2.mp4"
+    src="/project1.mp4"
     muted={false}
     loop={false}
     poster="project1.jpg"
