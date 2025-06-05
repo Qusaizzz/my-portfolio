@@ -37,7 +37,7 @@ export default function Hero() {
         }}
       >
         <h1 style={{ fontSize: '4rem', fontWeight: 'bold', margin: 0 }}>QUSSAI KHADDOUR</h1>
-        <p style={{ fontSize: '1.5rem', marginTop: '0.5rem' }}>Digital Media Designer</p>
+        <p style={{ fontSize: '1.5rem', marginTop: '0.9rem' }}>DIGITAL MEDIA DESIGNER</p>
       </div>
 
       <div style={{
