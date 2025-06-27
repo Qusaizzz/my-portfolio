@@ -72,7 +72,7 @@ export default function Projects() {
   {/* Fourth Project starts on a new row and aligned to the left */}
   <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-start', marginLeft: '0.7rem', marginTop: '3rem', marginBottom: '3rem' }}>
     <ProjectCard
-      title="Beach House - Walk through"
+      title="Beach House – Web-Based Immersive Walkthrough (WebGL)"
       subtitle="Unity, 3dsMax, WebGL"
       imageSrc="/project4.jpg"
       videoSrc="/project4.mp4"
