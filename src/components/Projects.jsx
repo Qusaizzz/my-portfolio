@@ -36,39 +36,50 @@ export default function Projects() {
       </div>
 
       {/* Projects Grid */}
-      <div
-        style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          gap: '1.5rem',
-          padding: '0 1rem',
-          justifyContent: 'center',
-        }}
-      >
-        <ProjectCard
-          title="GROHE's 360 showrooms Web-Based AR Experience"
-          subtitle="WebXR, Three.js, 3dsMax"
-          imageSrc="/project1.jpg"
-          videoSrc="/project1.mp4"
-          onClick={() => navigate('/project1')}
-        />
+<div
+  style={{
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: '1.5rem',
+    padding: '0 1rem',
+    justifyContent: 'center',
+  }}
+>
+  <ProjectCard
+    title="GROHE's 360 showrooms Web-Based AR Experience"
+    subtitle="WebXR, Three.js, 3dsMax"
+    imageSrc="/project1.jpg"
+    videoSrc="/project1.mp4"
+    onClick={() => navigate('/project1')}
+  />
 
-        <ProjectCard
-          title="'Götterfunken - Europa als Aufgabe' AR Storytelling"
-          subtitle="Unity, 3ds Max, MeshLab"
-          imageSrc="/projec2.jpg"
-          videoSrc="/ARex.mp4"
-          onClick={() => navigate('/project2')}
-        />
+  <ProjectCard
+    title="'Götterfunken - Europa als Aufgabe' AR Storytelling"
+    subtitle="Unity, 3ds Max, MeshLab"
+    imageSrc="/projec2.jpg"
+    videoSrc="/ARex.mp4"
+    onClick={() => navigate('/project2')}
+  />
 
-        <ProjectCard
-          title="A Journey of Life’s Evolution - Interactive Installation"
-          subtitle="Touchdesigner, Interactive Particle System"
-          imageSrc="/project33.jpg"
-          videoSrc="/project3.mp4"
-          onClick={() => navigate('/project3')}
-        />
-      </div>
+  <ProjectCard
+    title="A Journey of Life’s Evolution - Interactive Installation"
+    subtitle="Touchdesigner, Interactive Particle System"
+    imageSrc="/project33.jpg"
+    videoSrc="/project3.mp4"
+    onClick={() => navigate('/project3')}
+  />
+
+  {/* Fourth Project starts on a new row and aligned to the left */}
+  <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-start', marginLeft: '0.7rem', marginTop: '3rem', marginBottom: '3rem' }}>
+    <ProjectCard
+      title="Beach House - Walk through"
+      subtitle="Unity, 3dsMax, WebGL"
+      imageSrc="/project4.jpg"
+      videoSrc="/project4.mp4"
+      onClick={() => navigate('/project4')}
+    />
+  </div>
+</div>
     </section>
   );
 }

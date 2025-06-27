@@ -11,7 +11,7 @@ export default function Footer() {
       fontSize: '1rem'
     }}>
       {/* Left side - Email */}
-      <div style={{ marginBottom: '0.9rem' }}>
+      <div style={{ marginBottom: '0.9rem', marginLeft: '30px' }}>
         <a href="mailto:qusai.khadour7@gmail.com" style={{
           color: 'white',
           textDecoration: 'none',
