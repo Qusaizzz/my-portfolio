@@ -122,7 +122,7 @@ export default function Project3() {
   {/* Video1 */}
   <video
     ref={videoRef}
-    src="/era.mp4"
+    src="/era.webm"
     muted={false}
     loop={false}
     style={{
@@ -245,7 +245,7 @@ export default function Project3() {
     }}
   >
     <video
-      src="erafixed1.mp4" // Replace with the actual path to the first video
+      src="erafixed1.webm" // Replace with the actual path to the first video
       autoPlay
       loop
       muted
@@ -268,7 +268,7 @@ export default function Project3() {
     }}
   >
     <video
-      src="erafixed2.mp4" // Replace with the actual path to the second video
+      src="erafixed2.webm" // Replace with the actual path to the second video
       autoPlay
       loop
       muted
@@ -340,7 +340,7 @@ export default function Project3() {
       >
         {/* New Video (AutoPlay) */}
         <video
-          src="/eraprojector.mp4" // Update with your new video source
+          src="/eraprojector.webm" // Update with your new video source
           autoPlay
           muted
           loop
