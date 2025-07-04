@@ -22,11 +22,11 @@ export default function About() {
       }}>
         {/* PNG on the left */}
         <img
-          src="/me.png"
-          alt="Naya portrait"
+          src="/meq.png"
+          alt="Qussai portrait"
           style={{
             width: '400px',
-            height: '320px',
+            height: '400px',
             objectFit: 'cover',
             borderRadius: '0px',
             boxShadow: '0 0 20px rgba(255, 255, 255, 0.05)'

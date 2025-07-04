@@ -1,11 +1,13 @@
-import { useRef, useMemo } from 'react';
+import { useRef, useMemo, useEffect } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
-const particleCount = 1200;
+const particleCount = 1500;
 
 export default function Particles({ fade = 1 }) {
   const meshRef = useRef();
+  const mouse = useRef({ x: 0, y: 0 });
+  const targetRotation = useRef({ x: 0, y: 0 });
 
   const particles = useMemo(() => {
     return new Array(particleCount).fill().map(() => ({
@@ -18,6 +20,16 @@ export default function Particles({ fade = 1 }) {
       velocity: new THREE.Vector3(),
       noiseSeed: Math.random() * 1000
     }));
+  }, []);
+
+  // Update mouse position normalized [-1, 1]
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      mouse.current.x = (e.clientX / window.innerWidth - 0.5) * 2;
+      mouse.current.y = -(e.clientY / window.innerHeight - 0.5) * 2;
+    };
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
   useFrame(({ clock }) => {
@@ -39,6 +51,15 @@ export default function Particles({ fade = 1 }) {
       p.position.add(p.velocity);
     });
 
+    // Smooth rotation based on mouse
+    targetRotation.current.x += ((mouse.current.y * -0.2) - targetRotation.current.x) * 0.05;
+    targetRotation.current.y += ((mouse.current.x * 0.2) - targetRotation.current.y) * 0.05;
+
+    if (meshRef.current) {
+      meshRef.current.rotation.x = targetRotation.current.x;
+      meshRef.current.rotation.y = targetRotation.current.y;
+    }
+
     meshRef.current.children.forEach((child, i) => {
       child.position.copy(particles[i].position);
       if (child.material) {
@@ -47,8 +68,6 @@ export default function Particles({ fade = 1 }) {
         child.material.needsUpdate = true;
       }
     });
-
-    meshRef.current.rotation.y += 0.00025;
   });
 
   return (

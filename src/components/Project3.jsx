@@ -217,6 +217,38 @@ export default function Project3() {
         </div>
       </section>
 
+{/* New Video Section - Automatic Play */}
+      <section
+        style={{
+          width: '100%',
+          maxWidth: '1200px',
+          position: 'relative',
+          backgroundColor: '#fff',
+          flexShrink: 0,
+          marginTop: '4rem',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          marginBottom: '1rem',
+          overflow: 'hidden',
+          aspectRatio: '21 / 9',
+        }}
+      >
+        {/* New Video (AutoPlay) */}
+        <video
+          src="/comp.mp4" // Update with your new video source
+          autoPlay
+          muted
+          loop
+          poster="exi1.jpg" // Update with new poster image
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            backgroundColor: 'white',
+          }}
+        />
+      </section>
+
             {/* Video Section - Two Videos next to each other */}
 <section
   style={{
