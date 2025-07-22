@@ -1,56 +1,71 @@
 export default function Footer() {
   return (
-    <footer style={{
-      backgroundColor: '#0a0a0a',
-      color: 'white',
-      padding: '2rem',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      flexWrap: 'wrap',
-      fontSize: '1rem'
-    }}>
-      {/* Left side - Email */}
-      <div style={{ marginBottom: '0.9rem', marginLeft: '30px' }}>
-        <a href="mailto:qusai.khadour7@gmail.com" style={{
-          color: 'white',
-          textDecoration: 'none',
-          fontWeight: '200'
-        }}>
-          qusai.khadour7@gmail.com
-        </a>
-      </div>
-
-      {/* Right side - Social Links with shift */}
-      <div style={{
+    <footer
+      style={{
+        backgroundColor: '#0f0f0f',
+        color: 'white',
+        padding: '2rem',
         display: 'flex',
-        gap: '3rem',
-        transform: 'translateX(-20px)' // shift to the left
-      }}>
-        <a
-          href="https://www.linkedin.com/in/qussai-khaddour/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: 'white', textDecoration: 'none' }}
+        alignItems: 'flex-end', // Align content to bottom
+        height: '200px', // Adjust height as needed
+        fontSize: '1rem'
+      }}
+    >
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          width: '100%',
+          flexWrap: 'wrap'
+        }}
+      >
+        {/* Left side - Email */}
+        <div style={{ marginBottom: '0.9rem', marginLeft: '22px' }}>
+          <a
+            href="mailto:qusai.khadour7@gmail.com"
+            style={{
+              color: 'white',
+              textDecoration: 'none'
+            }}
+          >
+            qusai.khadour7@gmail.com
+          </a>
+        </div>
+
+        {/* Right side - Social Links */}
+        <div
+          style={{
+            display: 'flex',
+            gap: '3rem',
+            transform: 'translateX(-30px)', // Optional: shift to the left
+            marginBottom: '0.9rem'
+          }}
         >
-          LinkedIn
-        </a>
-        <a
-          href="https://www.artstation.com/qusaikhador"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: 'white', textDecoration: 'none' }}
-        >
-          ArtStation
-        </a>
-        <a
-          href="https://www.behance.net/qussaikhaddour"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: 'white', textDecoration: 'none' }}
-        >
-          Behance
-        </a>
+          <a
+            href="https://www.linkedin.com/in/qussai-khaddour/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: 'white', textDecoration: 'none' }}
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://www.artstation.com/qusaikhador"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: 'white', textDecoration: 'none' }}
+          >
+            ArtStation
+          </a>
+          <a
+            href="https://www.behance.net/qussaikhaddour"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: 'white', textDecoration: 'none' }}
+          >
+            Behance
+          </a>
+        </div>
       </div>
     </footer>
   );
