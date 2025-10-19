@@ -1,34 +1,70 @@
-import { Routes, Route } from 'react-router-dom';
-import Hero from './components/Hero';
-import About from './components/About';
-import Projects from './components/Projects';
-import Footer from './components/Footer';
-import Project1 from './components/Project1';
-import Project2 from './components/Project2';
-import Project3 from './components/Project3';
-import Project4 from './components/Project4';
-import ScrollToTop from './components/ScrollToTop'; // ✅ Import the component!
+import { Routes, Route } from "react-router-dom";
+import { Suspense, lazy } from "react";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
-function App() {
+// Lazy pages (keep your separate files)
+const Project1 = lazy(() => import("./components/Project1"));
+const Project2 = lazy(() => import("./components/Project2"));
+const Project3 = lazy(() => import("./components/Project3"));
+const Project4 = lazy(() => import("./components/Project4"));
+
+function Loader() {
+  return <div style={{ color:"#fff", padding:"2rem" }}>Loading…</div>;
+}
+
+export default function App() {
   return (
     <>
-      <ScrollToTop /> {/* ✅ This makes sure you always start at the top */}
+      <ScrollToTop />
       <Routes>
-        <Route path="/" element={
-          <>
-            <Hero />
-            <About />
-            <Projects />
-            <Footer />
-          </>
-        } />
-        <Route path="/project1" element={<Project1 />} />
-        <Route path="/project2" element={<Project2 />} />
-        <Route path="/project3" element={<Project3 />} />
-        <Route path="/project4" element={<Project4 />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <About />
+              <Projects />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/project1"
+          element={
+            <Suspense fallback={<Loader />}>
+              <Project1 />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/project2"
+          element={
+            <Suspense fallback={<Loader />}>
+              <Project2 />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/project3"
+          element={
+            <Suspense fallback={<Loader />}>
+              <Project3 />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/project4"
+          element={
+            <Suspense fallback={<Loader />}>
+              <Project4 />
+            </Suspense>
+          }
+        />
       </Routes>
     </>
   );
 }
-
-export default App;
