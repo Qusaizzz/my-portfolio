@@ -98,7 +98,7 @@ export default function Hero() {
         }}
       >
         {/* large name heading */}
-        <h1 style={{ fontSize: '4rem', fontWeight: 'bold', margin: 0 }}>
+        <h1 style={{ fontSize: '4rem', fontWeight: 'normal', margin: 0 }}>
           QUSSAI KHADDOUR
         </h1>
 

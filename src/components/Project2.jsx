@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Project1() {
+export default function Project2() {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -96,7 +96,7 @@ export default function Project1() {
 
         {/* Paragraph next to Title */}
         <div style={{ maxWidth: '600px', color: 'white', lineHeight: '2', marginTop: 0 }}>
-          <p style={{ fontSize: '0.8rem', marginTop: '3.6rem' }}>
+          <p style={{ fontSize: '1rem', marginTop: '3.6rem' }}>
             Symbols serve as powerful signs that connect us to values, beliefs, and cultural identities. This project was part of the exhibition 'Götterfunken - Europa als Aufgabe', organized by Hochschule Rhein-Waal and Schirrhof Kamp-Lintfort, aimed at showcasing the cultural identity of Kamp-Lintfort. My role was to bring the architectural element Kanzel to life, visually presenting it in the exhibition. I conducted a 3D scan of the original element, using the point cloud data to create an AR experience. This experience features a particle system that visually narrates the story of the Kanzel, blending history and technology.
           </p>
         </div>
@@ -211,7 +211,7 @@ export default function Project1() {
 
         {/* Paragraph next to Title */}
         <div style={{ maxWidth: '900px', color: 'white', lineHeight: '2', marginTop: 0 }}>
-          <p style={{ fontSize: '0.8rem', marginTop: '1.5rem' }}>
+          <p style={{ fontSize: '1rem', marginTop: '1.5rem' }}>
             The Kanzel, built in the early 18th century, features symbolic representations of the four evangelists: angel, lion, bull, and eagle. Matthew is depicted as a winged man, symbolizing the gospel's focus on human birth. Mark is a winged lion, reflecting the Baptist’s call in the desert. Luke is represented by a winged bull, referencing Zechariah’s sacrificial service. John is shown as an eagle. This project focused on presenting the original architectur element and highlighting these four symbols, bringing them to life through an interactive AR storytelling. The original Kanzel was scanned, and the point cloud data was converted into a mesh. The lowpoly of the four symbols were animated in 3ds Max, and the final augmented reality experience was created in Unity, with a particle system used to visually narrate the story of the Kanzel, blending historical symbolism with visual storytelling.
           </p>
         </div>
@@ -343,7 +343,7 @@ export default function Project1() {
 
         {/* Paragraph next to Title */}
         <div style={{ maxWidth: '900px', color: 'white', lineHeight: '2', marginTop: 0 }}>
-          <p style={{ fontSize: '0.8rem', marginTop: '1.5rem' }}>
+          <p style={{ fontSize: '1rem', marginTop: '1.5rem' }}>
             The exhibition was a collaboration between Hochschule Rhein-Waal and Schirrhof Kamp-Lintfort. Paper images with symbols and the names of the elements were used as image trackers, enabling visitors to access the augmented reality experience.
           </p>
         </div>

@@ -44,7 +44,7 @@ export default function Project4() {
         </div>
 
         <div style={{ maxWidth: '600px', color: 'white', lineHeight: '2' }}>
-          <p style={{ fontSize: '0.8rem', marginTop: '3.6rem' }}>
+          <p style={{ fontSize: '1rem', marginTop: '3.6rem' }}>
             This project presents a two-level beach house aligned with the natural terrain of a cliffside, where the mountain meets the sea. Developed with an interactive web-based walkthrough experience that allows users to explore the space in real time directly through their web browser.
           </p>
         </div>
@@ -140,7 +140,7 @@ export default function Project4() {
         </div>
 
         <div style={{ maxWidth: '900px', color: 'white', lineHeight: '2' }}>
-          <p style={{ fontSize: '0.8rem', marginTop: '1.5rem' }}>
+          <p style={{ fontSize: '1rem', marginTop: '1.5rem' }}>
             The building was designed in Revit (BIM). The model was then textured and rendered in 3ds Max using V-Ray, creating realistic and detailed results. To bring the concept to life, I developed a real-time interactive walkthrough in Unity as a WebGL, allowing easy access through any web browser without the need for any installation.
           </p>
         </div>

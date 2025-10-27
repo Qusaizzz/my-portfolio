@@ -45,20 +45,21 @@ export default function Projects() {
     justifyContent: 'center',
   }}
 >
-  <ProjectCard
-    title="GROHE's 360 showrooms Web-Based AR Experience"
-    subtitle="WebXR, Three.js, 3dsMax"
-    imageSrc="/project1.jpg"
-    videoSrc="/project1.mp4"
-    onClick={() => navigate('/project1')}
-  />
 
   <ProjectCard
-    title="'Götterfunken - Europa als Aufgabe' AR Storytelling"
-    subtitle="Unity, 3ds Max, MeshLab"
-    imageSrc="/projec2.jpg"
-    videoSrc="/ARex.mp4"
-    onClick={() => navigate('/project2')}
+      title="Beach House – Web-Based Immersive Walkthrough (WebGL)"
+      subtitle="Unity, 3dsMax, WebGL"
+      imageSrc="/project4.jpg"
+      videoSrc="/project4.mp4"
+      onClick={() => navigate('/project4')}
+    />
+
+  <ProjectCard
+    title="The Memory of Palmyra - Interactive Web Design"
+    subtitle="WebGL, Interactive Particle System"
+    imageSrc="/project5.jpg"
+    videoSrc="/project5cover.mp4"
+    onClick={() => navigate('/project5')}
   />
 
   <ProjectCard
@@ -70,14 +71,24 @@ export default function Projects() {
   />
 
   {/* Fourth Project starts on a new row and aligned to the left */}
-  <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-start', marginLeft: '0.7rem', marginTop: '3rem', marginBottom: '3rem' }}>
-    <ProjectCard
-      title="Beach House – Web-Based Immersive Walkthrough (WebGL)"
-      subtitle="Unity, 3dsMax, WebGL"
-      imageSrc="/project4.jpg"
-      videoSrc="/project4.mp4"
-      onClick={() => navigate('/project4')}
-    />
+  <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-start', marginLeft: '0.7rem', marginTop: '3rem', marginBottom: '3rem', gap: '1.5rem' }}>
+    
+   <ProjectCard
+    title="'Götterfunken - Europa als Aufgabe' AR Storytelling"
+    subtitle="Unity, 3ds Max, MeshLab"
+    imageSrc="/projec2.jpg"
+    videoSrc="/ARex.mp4"
+    onClick={() => navigate('/project2')}
+  />
+
+  <ProjectCard
+    title="GROHE's 360 showrooms Web-Based AR Experience"
+    subtitle="WebXR, Three.js, 3dsMax"
+    imageSrc="/project1.jpg"
+    videoSrc="/project1.mp4"
+    onClick={() => navigate('/project1')}
+  />
+
   </div>
 </div>
     </section>
