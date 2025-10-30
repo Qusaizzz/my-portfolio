@@ -108,7 +108,7 @@ export default function Project2() {
     width: '100%',
     maxWidth: '1200px',
     position: 'relative',
-    backgroundColor: '#fff',
+    // backgroundColor: '#fff',
     flexShrink: 0,
     marginTop: '2rem',
     marginLeft: 'auto',
@@ -129,7 +129,7 @@ export default function Project2() {
       width: '100%',
       height: '100%',
       objectFit: 'cover',
-      backgroundColor: 'white',
+      // backgroundColor: 'white',
       cursor: 'pointer',
     }}
     onClick={togglePlayPause}
