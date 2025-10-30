@@ -65,7 +65,7 @@ export default function Projects() {
   <ProjectCard
     title="A Journey of Life’s Evolution - Interactive Installation"
     subtitle="Touchdesigner, Interactive Particle System"
-    imageSrc="/newp333.jpg"
+    imageSrc="/project3.jpg"
     videoSrc="/project3.mp4"
     onClick={() => navigate('/project3')}
   />
@@ -77,7 +77,7 @@ export default function Projects() {
     title="'Götterfunken - Europa als Aufgabe' AR Storytelling"
     subtitle="Unity, 3ds Max, MeshLab"
     imageSrc="/projec2.jpg"
-    videoSrc="/ARex.mp4"
+    videoSrc="/project2.mp4"
     onClick={() => navigate('/project2')}
   />
 

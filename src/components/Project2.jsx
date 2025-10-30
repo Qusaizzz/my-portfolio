@@ -121,10 +121,10 @@ export default function Project2() {
   {/* Video1 */}
   <video
     ref={videoRef}
-    src="/ARex.mp4"
+    src="/project2.mp4"
     muted={false}
     loop={false}
-    poster="ARexpi.jpg"
+    poster="project2_thumbnail.jpg"
     style={{
       width: '100%',
       height: '100%',
@@ -247,7 +247,7 @@ export default function Project2() {
           }}
         >
           <img
-            src="/3dimg.jpg"
+            src="/project2_img1.jpg"
             alt="3D process"
             style={{
               maxWidth: '1200px',
@@ -286,7 +286,7 @@ export default function Project2() {
     }}
   >
     <video
-      src="3d1.mp4" // Replace with the actual path to the first video
+      src="project2_video1.mp4" // Replace with the actual path to the first video
       autoPlay
       loop
       muted
@@ -309,7 +309,7 @@ export default function Project2() {
     }}
   >
     <video
-      src="3d2.mp4" // Replace with the actual path to the second video
+      src="project2_video2.mp4" // Replace with the actual path to the second video
       autoPlay
       loop
       muted
@@ -367,11 +367,11 @@ export default function Project2() {
       >
         {/* New Video (AutoPlay) */}
         <video
-          src="/exi.mp4" // Update with your new video source
+          src="/project2_exhibition_video.mp4" // Update with your new video source
           autoPlay
           muted
           loop
-          poster="exi1.jpg" // Update with new poster image
+          poster="project2_exhibition_image.jpg" // Update with new poster image
           style={{
             width: '100%',
             height: '100%',

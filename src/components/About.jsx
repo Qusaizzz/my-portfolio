@@ -22,7 +22,7 @@ export default function About() {
       }}>
         {/* PNG on the left */}
         <img
-          src="/meq.png"
+          src="/profile.png"
           alt="Qussai portrait"
           style={{
             width: '400px',
