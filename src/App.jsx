@@ -1,27 +1,32 @@
+// src/App.jsx
 import { Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
+
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import SideNav from "./components/SideNav";   // ⭐ navbar
 
-// Lazy pages (keep your separate files)
-const Project1 = lazy(() => import("./components/Project1"));
+// Lazy project pages
 const Project2 = lazy(() => import("./components/Project2"));
 const Project3 = lazy(() => import("./components/Project3"));
 const Project4 = lazy(() => import("./components/Project4"));
 const Project5 = lazy(() => import("./components/Project5"));
 
 function Loader() {
-  return <div style={{ color:"#fff", padding:"2rem" }}>Loading…</div>;
+  return <div style={{ color: "#fff", padding: "2rem" }}>Loading…</div>;
 }
 
 export default function App() {
   return (
     <>
       <ScrollToTop />
+      <SideNav />   {/* ⭐ always visible, all routes */}
+
       <Routes>
+        {/* HOME PAGE */}
         <Route
           path="/"
           element={
@@ -33,14 +38,8 @@ export default function App() {
             </>
           }
         />
-        <Route
-          path="/project1"
-          element={
-            <Suspense fallback={<Loader />}>
-              <Project1 />
-            </Suspense>
-          }
-        />
+
+        {/* PROJECT PAGES */}
         <Route
           path="/project2"
           element={
@@ -49,6 +48,7 @@ export default function App() {
             </Suspense>
           }
         />
+
         <Route
           path="/project3"
           element={
@@ -57,6 +57,7 @@ export default function App() {
             </Suspense>
           }
         />
+
         <Route
           path="/project4"
           element={
@@ -64,7 +65,8 @@ export default function App() {
               <Project4 />
             </Suspense>
           }
-          />
+        />
+
         <Route
           path="/project5"
           element={

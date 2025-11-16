@@ -391,9 +391,7 @@ export default function Project2() {
           color: 'white',
         }}
       >
-        <Link to="/" style={{ color: 'white', textDecoration: 'none', fontSize: '1.2rem' }}>
-          ⬅ Home
-        </Link>
+        
       </section>
     </div>
   );

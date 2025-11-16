@@ -66,3 +66,90 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* ===== Side Navigation ===== */
+
+.side-nav {
+  position: fixed;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24px;
+  z-index: 9999;
+}
+
+/* Vertical line */
+.side-nav::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  bottom: -10px;
+  right: -3px;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Each navbar element */
+.side-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.25s ease;
+}
+
+/* 🔹 NEW: remove the ugly focus square */
+.side-nav-item:focus,
+.side-nav-item:focus-visible {
+  outline: none;
+}
+
+/* Hover */
+.side-nav-item:hover {
+  opacity: 1;
+  transform: translateX(-4px);
+}
+
+.side-nav-item:hover .side-nav-dot {
+  transform: scale(1.2);
+}
+
+/* Dot */
+.side-nav-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid white;
+  transition: all 0.25s ease;
+}
+
+/* Active section */
+.side-nav-item.active {
+  opacity: 1;
+}
+
+.side-nav-item.active .side-nav-dot {
+  background-color: white;
+  border-color: white;
+  transform: scale(1.35);
+}
+
+/* On small screens — hide labels, keep dots */
+@media (max-width: 768px) {
+  .side-nav-label {
+    display: none;
+  }
+  .side-nav {
+    right: 15px;
+  }
+}
