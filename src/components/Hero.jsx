@@ -50,17 +50,17 @@ export default function Hero() {
 
       {/* Text Overlay */}
       <div
-        style={{
-          position: 'absolute',
-          top: '35%',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          color: 'white',
-          textAlign: 'center',
-          zIndex: 10,
-          opacity: fade,
-          transition: 'opacity 0.3s ease-out'
-        }}
+      style={{
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',   // ⭐ full centering
+        color: 'white',
+        textAlign: 'center',
+        zIndex: 10,
+        opacity: fade,
+        transition: 'opacity 0.3s ease-out'
+      }}
       >
         <h1 style={{ fontSize: '4rem', fontWeight: 'normal', margin: 0 }}>
           QUSSAI KHADDOUR

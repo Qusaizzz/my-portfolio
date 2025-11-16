@@ -52,7 +52,7 @@ export default function Projects() {
           subtitle="Unity, 3dsMax, WebGL"
           imageSrc="/project4.jpg"
           videoSrc="/project4.mp4"
-          onClick={() => navigate('/project4')}
+          link="/project4" 
         />
 
         <ProjectCard
@@ -60,7 +60,7 @@ export default function Projects() {
           subtitle="WebGL, Interactive Particle System"
           imageSrc="/project5.jpg"
           videoSrc="/project5cover.mp4"
-          onClick={() => navigate('/project5')}
+          link="/project5" 
         />
 
         <ProjectCard
@@ -68,7 +68,7 @@ export default function Projects() {
           subtitle="Touchdesigner, Interactive Particle System"
           imageSrc="/project3.jpg"
           videoSrc="/project3.mp4"
-          onClick={() => navigate('/project3')}
+          link="/project3" 
         />
 
         {/* Fourth Project starts on a new row */}
@@ -88,7 +88,7 @@ export default function Projects() {
             subtitle="Unity, 3ds Max, MeshLab"
             imageSrc="/projec2.jpg"
             videoSrc="/project2.mp4"
-            onClick={() => navigate('/project2')}
+            link="/project2" 
           />
 
           {/*

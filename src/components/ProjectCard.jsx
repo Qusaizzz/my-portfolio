@@ -1,8 +1,10 @@
 import { useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-export default function ProjectCard({ title, subtitle, onClick, imageSrc, videoSrc }) {
+export default function ProjectCard({ title, subtitle, link, imageSrc, videoSrc }) {
   const videoRef = useRef(null);
   const [hovered, setHovered] = useState(false);
+  const navigate = useNavigate();
 
   const handleMouseEnter = () => {
     setHovered(true);
@@ -11,19 +13,32 @@ export default function ProjectCard({ title, subtitle, onClick, imageSrc, videoS
 
   const handleMouseLeave = () => {
     setHovered(false);
-    videoRef.current?.pause();
-    videoRef.current.currentTime = 0; // reset video
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0; // reset video
+    }
+  };
+
+  const handleClick = (e) => {
+    // Prevent full page reload, use SPA navigation instead
+    e.preventDefault();
+    if (link) {
+      navigate(link);
+    }
   };
 
   return (
-    <div
-      onClick={onClick}
+    <a
+      href={link}               // <-- real URL for right-click "open in new tab"
+      onClick={handleClick}     // <-- SPA navigation for left click
       style={{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'flex-start',
         cursor: 'pointer',
         width: 'calc(33.333% - 1.5rem)',
+        textDecoration: 'none',
+        color: 'inherit',
       }}
     >
       {/* Rectangle with image + video on hover */}
@@ -63,6 +78,7 @@ export default function ProjectCard({ title, subtitle, onClick, imageSrc, videoS
             height: '100%',
             objectFit: 'cover',
             display: hovered ? 'block' : 'none',
+            pointerEvents: 'none',   // ⭐ important: no right-click menu on video
           }}
         />
       </div>
@@ -72,6 +88,6 @@ export default function ProjectCard({ title, subtitle, onClick, imageSrc, videoS
         <div style={{ color: 'white', fontWeight: '500' }}>{title}</div>
         <div style={{ color: '#aaa', fontSize: '0.9rem' }}>{subtitle}</div>
       </div>
-    </div>
+    </a>
   );
 }
