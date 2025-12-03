@@ -14,6 +14,7 @@ const Project2 = lazy(() => import("./components/Project2"));
 const Project3 = lazy(() => import("./components/Project3"));
 const Project4 = lazy(() => import("./components/Project4"));
 const Project5 = lazy(() => import("./components/Project5"));
+const Project6 = lazy(() => import("./components/Project6"));
 
 function Loader() {
   return <div style={{ color: "#fff", padding: "2rem" }}>Loading…</div>;
@@ -72,6 +73,15 @@ export default function App() {
           element={
             <Suspense fallback={<Loader />}>
               <Project5 />
+            </Suspense>
+          }
+        />
+
+        <Route
+          path="/project6"
+          element={
+            <Suspense fallback={<Loader />}>
+              <Project6 />
             </Suspense>
           }
         />

@@ -96,7 +96,7 @@ export default function Project1() {
 
         {/* Paragraph next to Title */}
         <div style={{ maxWidth: '600px', color: 'white', lineHeight: '2', marginTop: 0 }}>
-          <p style={{ fontSize: '1rem', marginTop: '3.6rem' }}>
+          <p style={{ fontSize: '1rem', marginTop: '2rem' }}>
             This project is an interactive AR experience I developed as a working student at GROHE. The goal was to introduce a "scan and place" feature within GROHE's 360 showrooms, enabling users to visualize products in their own space using augmented reality. Built with WebXR and Three.js, the experience is available instantly through a simple web page, eliminating the need for users to download any apps. While it offers accessibility across different platforms, it's important to note that WebXR is not yet fully supported by iOS, meaning the experience works best on Android devices. This project reflects GROHE's innovative approach to providing immersive experiences to users.
           </p>
         </div>

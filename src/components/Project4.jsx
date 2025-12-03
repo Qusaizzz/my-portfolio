@@ -38,13 +38,13 @@ export default function Project4() {
         }}
       >
         <div style={{ maxWidth: '500px' }}>
-          <h1 style={{ fontSize: '2.9rem', marginBottom: '0.5rem' }}>Beach House – WebBased Immersive Walkthrough (WebGL)</h1>
+          <h1 style={{ fontSize: '2.6rem', marginBottom: '0.5rem' }}>Beach House – WebBased Immersive Walkthrough (WebGL)</h1>
 
           <p style={{ fontSize: '0.8rem', color: '#aaa' }}>Tools: Unity, 3ds Max, WebGL</p>
         </div>
 
-        <div style={{ maxWidth: '600px', color: 'white', lineHeight: '2' }}>
-          <p style={{ fontSize: '1rem', marginTop: '3.6rem' }}>
+        <div style={{ maxWidth: '600px', color: 'white', lineHeight: '2', marginTop: 0 }}>
+          <p style={{ fontSize: '1rem', marginTop: '2rem' }}>
             This project presents a two-level beach house aligned with the natural terrain of a cliffside, where the mountain meets the sea. Developed with an interactive web-based walkthrough experience that allows users to explore the space in real time directly through their web browser.
           </p>
         </div>

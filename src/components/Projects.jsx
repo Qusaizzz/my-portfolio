@@ -91,6 +91,14 @@ export default function Projects() {
             link="/project2" 
           />
 
+          <ProjectCard
+            title="Inner Nature - A Bio-Driven Experience"
+            subtitle="Touchdesigner, StreamDiffuaion, Muse 2, Brain Waves"
+            imageSrc="/projec6.jpg"
+            videoSrc="/intro.mp4"
+            link="/project6" 
+          />
+
           {/*
             <ProjectCard
               title="GROHE's 360 showrooms Web-Based AR Experience"

@@ -89,14 +89,14 @@ export default function Project2() {
         }}
       >
         <div style={{ maxWidth: '500px', marginTop: 0 }}>
-          <h1 style={{ fontSize: '3.6rem', marginBottom: '0.5rem' }}>'Götterfunken - Europa als Aufgabe' AR Storytelling</h1>
+          <h1 style={{ fontSize: '2.8rem', marginBottom: '0.5rem' }}>'Götterfunken - Europa als Aufgabe' AR Storytelling</h1>
           <p style={{ fontSize: '0.8rem', color: '#aaa' }}>Role: Master's Student - Design and Interaction</p>
           <p style={{ fontSize: '0.8rem', color: '#aaa' }}>Tools: Unity, 3ds Max, MeshLab</p>
         </div>
 
         {/* Paragraph next to Title */}
         <div style={{ maxWidth: '600px', color: 'white', lineHeight: '2', marginTop: 0 }}>
-          <p style={{ fontSize: '1rem', marginTop: '3.6rem' }}>
+          <p style={{ fontSize: '1rem', marginTop: '2rem' }}>
             Symbols serve as powerful signs that connect us to values, beliefs, and cultural identities. This project was part of the exhibition 'Götterfunken - Europa als Aufgabe', organized by Hochschule Rhein-Waal and Schirrhof Kamp-Lintfort, aimed at showcasing the cultural identity of Kamp-Lintfort. My role was to bring the architectural element Kanzel to life, visually presenting it in the exhibition. I conducted a 3D scan of the original element, using the point cloud data to create an AR experience. This experience features a particle system that visually narrates the story of the Kanzel, blending history and technology.
           </p>
         </div>

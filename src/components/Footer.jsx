@@ -7,7 +7,7 @@ export default function Footer() {
         padding: '2rem',
         display: 'flex',
         alignItems: 'flex-end', // Align content to bottom
-        height: '200px', // Adjust height as needed
+        height: '120px', // Adjust height as needed
         fontSize: '1rem'
       }}
     >
@@ -20,7 +20,7 @@ export default function Footer() {
         }}
       >
         {/* Left side - Email */}
-        <div style={{ marginBottom: '0.9rem', marginLeft: '22px' }}>
+        <div style={{ marginBottom: '3rem', marginLeft: '22px' }}>
           <a
             href="mailto:qusai.khadour7@gmail.com"
             style={{

@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Project3() {
+export default function Project2() {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -88,20 +88,124 @@ export default function Project3() {
           alignItems: 'flex-start', // Align items to the top
         }}
       >
-        <div style={{ maxWidth: '500px', marginTop: 0 }}>
-          <h1 style={{ fontSize: '2.8rem', marginBottom: '0.5rem' }}>A Journey of Life’s Evolution - Interactive Installation</h1>
+        <div style={{ maxWidth: '450px', marginTop: 0 }}>
+          <h1 style={{ fontSize: '2.8rem', marginBottom: '0.5rem' }}>Inner Nature - A Bio Driven Experience</h1>
           <p style={{ fontSize: '0.8rem', color: '#aaa' }}>Role: Master's Student - Design and Interaction</p>
-          <p style={{ fontSize: '0.8rem', color: '#aaa' }}>Tools: Touchdesigner, 3ds Max</p>
-          <p style={{ fontSize: '0.8rem', color: '#aaa' }}>Sensors: Kinect, LeapMotion</p>
+          <p style={{ fontSize: '0.8rem', color: '#aaa' }}>Touchdesigner, StreamDiffuaion, Muse 2, Brain Waves</p>
         </div>
 
         {/* Paragraph next to Title */}
         <div style={{ maxWidth: '600px', color: 'white', lineHeight: '2', marginTop: 0 }}>
           <p style={{ fontSize: '1rem', marginTop: '2rem' }}>
-            Designed for the Museum für Naturkunde - Leibniz Institute for Evolution and Biodiversity Science (MfN), this interactive installation invites visitors to experience the evolution of life in a deeply personal way. As users move through a straight path, their reflection transforms to resemble creatures from various eras in the history of life, starting with ancient life forms from the Paleozoic Era, progressing through the Mesozoic Era and the age of dinosaurs, and evolving into mammals during the Cenozoic Era, moving to the Quaternary Period, the rise of modern humans. In the final stage of the experience (The Future), users encounter their reflection in an undefined shape, which they can interact with and reshape through hand gestures. This immersive experience allows users to feel the passage of time and illustrates the concept that the future is in our hands, emphasizing the profound responsibility we, as humans, have in shaping what comes next for the planet and its creatures.
+            Inner Nature is an interactive visual experience that translates real-time biometric data—brainwaves, heart pulse, and breath into a growing generative plant. The experience transforms the body’s internal signals into a living and evolving visual organism, revealing our physical and physiological state.
           </p>
         </div>
       </section>
+
+      {/* Image Section */}
+      <section
+        style={{
+          backgroundColor: '#0a0a0a',
+          padding: '1rem',
+          display: 'flex',
+          justifyContent: 'flex-start',
+          alignItems: 'center',
+          gap: '1rem',
+          flexWrap: 'wrap',
+          width: '100%',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          maxWidth: '1200px',
+        }}
+      >
+        <div
+          style={{
+            flex: '1 1 60%',
+            display: 'flex',
+            justifyContent: 'flex-start',
+            alignItems: 'center',
+            gap: '1rem',
+            flexWrap: 'wrap',
+          }}
+        >
+          <img
+            src="/Project6_img.jpg"
+            alt="Beach House"
+            style={{
+              maxWidth: '1200px',
+              width: '100%',
+              height: 'auto',
+            }}
+          />
+        </div>
+      </section>
+
+
+ {/* New Video Section - Automatic Play */}
+      <section
+        style={{
+          width: '100%',
+          maxWidth: '1200px',
+          position: 'relative',
+          flexShrink: 0,
+          marginTop: '2rem',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          marginBottom: '1rem',
+          overflow: 'hidden',
+        }}
+      >
+        {/* New Video (AutoPlay) */}
+        <video
+          src="/BioDriven.mp4" // Update with your new video source
+          autoPlay
+          muted
+          loop
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            backgroundColor: 'white',
+          }}
+        />
+      </section>
+
+
+{/* Title & Description Section - aligned at the top */}
+      <section
+        style={{
+          padding: '2rem 4vw',
+          backgroundColor: '#0a0a0a',
+          width: '100%',
+          textAlign: 'left',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          maxWidth: '1200px',
+          display: 'flex',
+          flexDirection: 'row', // Row layout for side-by-side content
+          justifyContent: 'space-between', // Space between elements
+          alignItems: 'flex-start', // Align items to the top
+        }}
+      >
+        <div style={{ maxWidth: '500px', marginTop: 0 }}>
+          <h1 style={{ fontSize: '1.6rem', marginBottom: '0.5rem', fontWeight: '300' }}>Concept & Process</h1>
+        </div>
+
+        {/* Paragraph next to Title */}
+        <div style={{ maxWidth: '900px', color: 'white', lineHeight: '2', marginTop: 0 }}>
+            <p style={{ fontSize: '1rem', marginTop: '1.5rem' }}>
+            The concept is rooted in the idea that our emotional and physiological states are not separate from our environment but constantly influencing it. By visualizing these signals as a responsive, evolving organism, the experience invites the user to witness their inner state taking shape before their eyes.
+          </p>
+          <p style={{ fontSize: '1rem', marginTop: '1.5rem' }}>
+            I created the experience in Touchdesigner, and integrated the user’s brain activity, heart rate, and breath to as inputs to control the behavior and shape of the generated visual plant. Using the Muse 2 headband, brainwave data is streamed into TouchDesigner via OSC, where different channels are mapped to parameters that define the plant’s structure and growth. A calmer mental state results in smoother, more flourishing forms. Heart rate and breath signals add another layer of responsiveness. Breathing influences the plant’s motion, allowing it to expand in rhythm with the user. I also integrated StreamDiffusion to generate adaptive visual textures that evolve in rea-time based on the generated bio-reactive tree.
+          </p>
+          
+        </div>
+      </section>
+
+      
+
+
 
     {/* Video Section - video1 */}
 <section
@@ -116,15 +220,16 @@ export default function Project3() {
     marginRight: 'auto',
     marginBottom: '1rem', // ✅ Add this line!
     overflow: 'hidden',
-    aspectRatio: '16 / 5',
+    aspectRatio: '16 / 9',
   }}
 >
   {/* Video1 */}
   <video
     ref={videoRef}
-    src="/era.webm"
+    src="/Interface.mp4"
     muted={false}
     loop={false}
+    // poster="project2_thumbnail.jpg"
     style={{
       width: '100%',
       height: '100%',
@@ -189,33 +294,7 @@ export default function Project3() {
   />
 </section>
 
-{/* Title & Description Section - aligned at the top */}
-      <section
-        style={{
-          padding: '2rem 4vw',
-          backgroundColor: '#0a0a0a',
-          width: '100%',
-          textAlign: 'left',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          maxWidth: '1200px',
-          display: 'flex',
-          flexDirection: 'row', // Row layout for side-by-side content
-          justifyContent: 'space-between', // Space between elements
-          alignItems: 'flex-start', // Align items to the top
-        }}
-      >
-        <div style={{ maxWidth: '500px', marginTop: 0 }}>
-          <h1 style={{ fontSize: '1.6rem', marginBottom: '0.5rem', fontWeight: '300' }}>Process</h1>
-        </div>
 
-        {/* Paragraph next to Title */}
-        <div style={{ maxWidth: '900px', color: 'white', lineHeight: '2', marginTop: 0 }}>
-          <p style={{ fontSize: '1rem', marginTop: '1.5rem' }}>
-            In this project, I created an interactive particle system experience, I used TouchDesigner to create and test the experience. I integrated Kinect to track the user’s position and enable the dynamic transformation of their reflection as they moved through the installation. I used Leap Motion to capture hand gestures in the last stage of the experience, allowing users to interact with the undefined future form.
-          </p>
-        </div>
-      </section>
 
 {/* New Video Section - Automatic Play */}
       <section
@@ -223,23 +302,20 @@ export default function Project3() {
           width: '100%',
           maxWidth: '1200px',
           position: 'relative',
-          backgroundColor: '#fff',
           flexShrink: 0,
-          marginTop: '4rem',
+          marginTop: '2rem',
           marginLeft: 'auto',
           marginRight: 'auto',
           marginBottom: '1rem',
           overflow: 'hidden',
-          aspectRatio: '21 / 9',
         }}
       >
         {/* New Video (AutoPlay) */}
         <video
-          src="/comp.mp4" // Update with your new video source
+          src="/intro.mp4" // Update with your new video source
           autoPlay
           muted
           loop
-          poster="exi1.jpg" // Update with new poster image
           style={{
             width: '100%',
             height: '100%',
@@ -249,134 +325,28 @@ export default function Project3() {
         />
       </section>
 
-            {/* Video Section - Two Videos next to each other */}
-<section
-  style={{
-    backgroundColor: '#0a0a0a',
-    padding: '2rem',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    gap: '1rem',
-    flexWrap: 'wrap',
-    width: '100%',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    maxWidth: '1200px', // Align with other sections
-  }}
->
-  {/* Video 1 */}
-  <div
-    style={{
-      flex: '1 1 46%',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      marginLeft: '1.1rem', // Add side margin
-      marginRight: '0.4rem', // Add side margin
-    }}
-  >
-    <video
-      src="erafixed1.webm" // Replace with the actual path to the first video
-      autoPlay
-      loop
-      muted
-      style={{
-        maxWidth: '100%',
-        height: 'auto',
-      }}
-    />
-  </div>
-
-  {/* Video 2 */}
-  <div
-    style={{
-      flex: '1 1 46%',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      marginLeft: '0.4rem', // Add side margin
-      marginRight: '1.1rem', // Add side margin
-    }}
-  >
-    <video
-      src="erafixed2.webm" // Replace with the actual path to the second video
-      autoPlay
-      loop
-      muted
-      style={{
-        maxWidth: '100%',
-        height: 'auto',
-      }}
-    />
-  </div>
-</section>
-
-      {/* White Section with One Image and Paragraph */}
-      <section
-        style={{
-          backgroundColor: '#0a0a0a',
-          padding: '2rem',
-          display: 'flex',
-          justifyContent: 'flex-start',
-          alignItems: 'center',
-          gap: '1rem',
-          flexWrap: 'wrap',
-          width: '100%',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          maxWidth: '1200px', // Align with video section
-        }}
-      >
-        {/* Image */}
-        <div
-          style={{
-            flex: '1 1 60%',
-            display: 'flex',
-            justifyContent: 'flex-start',
-            alignItems: 'center',
-            gap: '1rem',
-            flexWrap: 'wrap',
-          }}
-        >
-          <img
-            src="/eraimg.jpg"
-            alt="3D process"
-            style={{
-              maxWidth: '1200px',
-              width: '100%',
-              height: 'auto',
-            }}
-          />
-        </div>
-      </section>
 
 
-
-
-        {/* New Video Section - Automatic Play */}
+      {/* New Video Section - Automatic Play */}
       <section
         style={{
           width: '100%',
           maxWidth: '1200px',
           position: 'relative',
-          backgroundColor: '#fff',
           flexShrink: 0,
-          marginTop: '4rem',
+          marginTop: '2rem',
           marginLeft: 'auto',
           marginRight: 'auto',
           marginBottom: '1rem',
           overflow: 'hidden',
-          aspectRatio: '16 / 9',
         }}
       >
         {/* New Video (AutoPlay) */}
         <video
-          src="/eraprojector.webm" // Update with your new video source
+          src="/intro_1.mp4" // Update with your new video source
           autoPlay
           muted
           loop
-          poster="exi1.jpg" // Update with new poster image
           style={{
             width: '100%',
             height: '100%',
@@ -385,6 +355,8 @@ export default function Project3() {
           }}
         />
       </section>
+
+      
 
 
       {/* Footer Section */}

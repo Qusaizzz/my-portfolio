@@ -50,13 +50,7 @@ export default function About() {
           }}
         >
           <p style={{ fontSize: '1rem', lineHeight: '1.9', textAlign: 'left' }}>
-            Hi, I'm Qussai – a designer and immersive experience creator based
-            in Germany. I specialize in spatial UX/UI, interactive 3D
-            environments, and real-time design. I love crafting digital spaces
-            that evoke emotion, reflection, and delight. I'm currently studying
-            a Master's in Design and Interaction at Hochschule Rhein-Waal and
-            working as a working student in digital content and experience at
-            GROHE.
+            Hi, I'm Qussai – a designer and immersive experience creator based in Germany. My works focus on spatial storytelling, interactive 3D environments, and real-time design. I love creating digital experiences that evoke emotion, reflection, and delight. I’m currently pursuing a Master’s in Design & Interaction at Hochschule Rhein-Waal and working as a Working Student in Digital Content & Experience at GROHE.
           </p>
         </div>
       </div>
