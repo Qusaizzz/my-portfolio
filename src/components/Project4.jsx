@@ -141,7 +141,7 @@ export default function Project4() {
 
         <div style={{ maxWidth: '900px', color: 'white', lineHeight: '2' }}>
           <p style={{ fontSize: '1rem', marginTop: '1.5rem' }}>
-            The building was designed in Revit (BIM). The model was then textured and rendered in 3ds Max using V-Ray, creating realistic and detailed results. To bring the concept to life, I developed a real-time interactive walkthrough in Unity as a WebGL, allowing easy access through any web browser without the need for any installation.
+            I designed the building in Revit using a full BIM workflow, then brought the model into 3ds Max where I handled all texturing and V-Ray rendering to achieve realistic, high-quality visuals. To make the concept fully interactive, I developed a real-time walkthrough in Unity and exported it as a WebGL build, allowing users to explore the space directly in their browser with no installation required.
           </p>
         </div>
       </section>
