@@ -94,8 +94,8 @@ export default function Projects() {
           <ProjectCard
             title="Inner Nature - A Bio-Driven Experience"
             subtitle="Touchdesigner, StreamDiffuaion, Muse 2, Brain Waves"
-            imageSrc="/projec6.jpg"
-            videoSrc="/intro.mp4"
+            imageSrc="/p6.jpg"
+            videoSrc="/BioDriven.mp4"
             link="/project6" 
           />
 

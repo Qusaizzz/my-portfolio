@@ -356,7 +356,44 @@ export default function Project2() {
         />
       </section>
 
-      
+
+      {/* Image Section */}
+      <section
+        style={{
+          backgroundColor: '#0a0a0a',
+          padding: '1rem',
+          display: 'flex',
+          justifyContent: 'flex-start',
+          alignItems: 'center',
+          gap: '1rem',
+          flexWrap: 'wrap',
+          width: '100%',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          maxWidth: '1200px',
+        }}
+      >
+        <div
+          style={{
+            flex: '1 1 60%',
+            display: 'flex',
+            justifyContent: 'flex-start',
+            alignItems: 'center',
+            gap: '1rem',
+            flexWrap: 'wrap',
+          }}
+        >
+          <img
+            src="/project6teaser.jpg"
+            alt="Beach House"
+            style={{
+              maxWidth: '1200px',
+              width: '100%',
+              height: 'auto',
+            }}
+          />
+        </div>
+      </section>
 
 
       {/* Footer Section */}
