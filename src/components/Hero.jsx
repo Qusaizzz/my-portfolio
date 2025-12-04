@@ -67,7 +67,7 @@ export default function Hero() {
         </h1>
 
         <p style={{ fontSize: '1.5rem', marginTop: '0.9rem' }}>
-          DIGITAL MEDIA DESIGNER
+          INTERACTIVE DESIGNER
         </p>
       </div>
 
