@@ -85,8 +85,8 @@ export default function ProjectCard({ title, subtitle, link, imageSrc, videoSrc 
 
       {/* Title & Subtitle Below */}
       <div style={{ marginTop: '0.6rem', textAlign: 'left' }}>
-        <div style={{ color: 'white', fontWeight: '500' }}>{title}</div>
-        <div style={{ color: '#aaa', fontSize: '0.9rem' }}>{subtitle}</div>
+        <div style={{ fontSize: '1.3rem', color: 'white', fontWeight: '400', marginTop: '0.4rem' }}>{title}</div>
+        <div style={{ color: '#898989ff', fontSize: '1.1rem', marginTop: '0.3rem'  }}>{subtitle}</div>
       </div>
     </a>
   );

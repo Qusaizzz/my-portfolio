@@ -100,7 +100,7 @@ export default function Project4() {
         {/* Show iframe only after click */}
         {iframeStarted && (
           <iframe
-            src="https://html-classic.itch.zone/html/14086787/index.html"
+            src="https://html-classic.itch.zone/html/18924324/index.html"
             width="100%"
             height="100%"
             frameBorder="0"
