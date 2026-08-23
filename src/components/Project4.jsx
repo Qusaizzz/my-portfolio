@@ -45,7 +45,7 @@ export default function Project4() {
 
         <div style={{ maxWidth: '600px', color: 'white', lineHeight: '2', marginTop: 0 }}>
           <p style={{ fontSize: '1rem', marginTop: '2rem' }}>
-            This project presents a two-level beach house aligned with the natural terrain of a cliffside, where the mountain meets the sea. Developed with an interactive web-based walkthrough experience that allows users to explore the space in real time directly through their web browser.
+            This project presents a two-level beach house aligned with the natural terrain of a cliffside, where the mountain meets the sea. Developed with an interactive web-based walkthrough experience that allows users to explore the space in real time directly through their web browser
           </p>
         </div>
       </section>
