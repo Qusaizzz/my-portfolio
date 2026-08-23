@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 export default function Project4() {
   const [iframeStarted, setIframeStarted] = useState(false);
@@ -21,7 +20,7 @@ export default function Project4() {
         margin: 0,
       }}
     >
-      {/* Title & Description Section */}
+      {/* Title and Description Section */}
       <section
         style={{
           padding: '2rem 4vw',
@@ -38,45 +37,78 @@ export default function Project4() {
         }}
       >
         <div style={{ maxWidth: '500px' }}>
-          <h1 style={{ fontSize: '2.6rem', marginBottom: '0.5rem' }}>Beach House – WebBased Immersive Walkthrough (WebGL)</h1>
+          <h1
+            style={{
+              fontSize: '2.6rem',
+              marginBottom: '0.5rem',
+            }}
+          >
+            Beach House – Web-Based Immersive Walkthrough (WebGL)
+          </h1>
 
-          <p style={{ fontSize: '0.8rem', color: '#aaa' }}>Tools: Unity, 3ds Max, WebGL</p>
+          <p
+            style={{
+              fontSize: '0.8rem',
+              color: '#aaa',
+            }}
+          >
+            Tools: Unity, 3ds Max, WebGL
+          </p>
         </div>
 
-        <div style={{ maxWidth: '600px', color: 'white', lineHeight: '2', marginTop: 0 }}>
-          <p style={{ fontSize: '1rem', marginTop: '2rem' }}>
-            This project presents a two-level beach house aligned with the natural terrain of a cliffside, where the mountain meets the sea. Developed with an interactive web-based walkthrough experience that allows users to explore the space in real time directly through their web browser
+        <div
+          style={{
+            maxWidth: '600px',
+            color: 'white',
+            lineHeight: '2',
+            marginTop: 0,
+          }}
+        >
+          <p
+            style={{
+              fontSize: '1rem',
+              marginTop: '2rem',
+            }}
+          >
+            This project presents a two-level beach house aligned with the
+            natural terrain of a cliffside, where the mountain meets the sea.
+            It was developed as an interactive web-based walkthrough that
+            allows users to explore the space in real time directly through
+            their web browser.
           </p>
         </div>
       </section>
 
-      {/* Unity WebGL iframe Section */}
+      {/* Unity WebGL Embed Section */}
       <section
         style={{
           width: '100%',
           maxWidth: '1200px',
-          aspectRatio: '16 / 9',
+          aspectRatio: '1280 / 740',
           marginTop: '2rem',
           marginLeft: 'auto',
           marginRight: 'auto',
           marginBottom: '1rem',
           overflow: 'hidden',
           borderRadius: '12px',
-          boxShadow: '0 0 20px rgba(0,0,0,0.4)',
+          boxShadow: '0 0 20px rgba(0, 0, 0, 0.4)',
           position: 'relative',
           backgroundColor: '#000',
         }}
       >
         {/* Start Overlay */}
         {!iframeStarted && (
-          <div
+          <button
+            type="button"
             onClick={handleStartClick}
+            aria-label="Start the Beach House interactive walkthrough"
             style={{
               position: 'absolute',
-              top: 0,
-              left: 0,
+              inset: 0,
               width: '100%',
               height: '100%',
+              padding: 0,
+              border: 'none',
               backgroundColor: 'rgba(0, 0, 0, 0.6)',
               zIndex: 10,
               display: 'flex',
@@ -87,37 +119,63 @@ export default function Project4() {
           >
             <img
               src="/info.png"
-              alt="Click to start the experience"
+              alt="Start the Beach House interactive walkthrough"
               style={{
-                width: '1400px',
-                maxWidth: '100%',
-                height: 'auto',
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
               }}
             />
-          </div>
+          </button>
         )}
 
-        {/* Show iframe only after click */}
+        {/* Load the official itch.io embed only after clicking */}
         {iframeStarted && (
           <iframe
-            src="https://html-classic.itch.zone/html/18924324/index.html"
+            src="https://itch.io/embed-upload/18924324?color=000000"
+            title="Beach House WebGL Walkthrough"
             width="100%"
             height="100%"
             frameBorder="0"
-            allowFullScreen
             scrolling="no"
-            allow="autoplay; fullscreen; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share; pointer-lock"
-            sandbox="allow-scripts allow-same-origin allow-popups allow-pointer-lock"
+            allowFullScreen
+            allow="autoplay; fullscreen; gamepad; gyroscope; accelerometer; pointer-lock"
             style={{
+              display: 'block',
               width: '100%',
               height: '100%',
               border: 'none',
             }}
-          ></iframe>
+          />
         )}
       </section>
 
-      {/* Concept & Process Section */}
+      {/* Direct Link Fallback */}
+      <p
+        style={{
+          margin: '0.5rem auto 2rem',
+          padding: '0 1rem',
+          color: '#aaa',
+          textAlign: 'center',
+          fontSize: '0.9rem',
+        }}
+      >
+        If the walkthrough does not load,{' '}
+        <a
+          href="https://qussaikh.itch.io/beach-house"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            color: '#fff',
+            textDecoration: 'underline',
+          }}
+        >
+          open it directly on itch.io
+        </a>
+        .
+      </p>
+
+      {/* Concept and Process Section */}
       <section
         style={{
           padding: '2rem 4vw',
@@ -134,19 +192,41 @@ export default function Project4() {
         }}
       >
         <div style={{ maxWidth: '500px' }}>
-          <h1 style={{ fontSize: '1.6rem', marginBottom: '0.5rem', fontWeight: '300' }}>
-            Concept & Process
-          </h1>
+          <h2
+            style={{
+              fontSize: '1.6rem',
+              marginBottom: '0.5rem',
+              fontWeight: 300,
+            }}
+          >
+            Concept &amp; Process
+          </h2>
         </div>
 
-        <div style={{ maxWidth: '900px', color: 'white', lineHeight: '2' }}>
-          <p style={{ fontSize: '1rem', marginTop: '1.5rem' }}>
-            I designed the building in Revit using a full BIM workflow, then brought the model into 3ds Max where I handled all texturing and V-Ray rendering to achieve realistic, high-quality visuals. To make the concept fully interactive, I developed a real-time walkthrough in Unity and exported it as a WebGL build, allowing users to explore the space directly in their browser with no installation required.
+        <div
+          style={{
+            maxWidth: '900px',
+            color: 'white',
+            lineHeight: '2',
+          }}
+        >
+          <p
+            style={{
+              fontSize: '1rem',
+              marginTop: '1.5rem',
+            }}
+          >
+            I designed the building in Revit using a full BIM workflow, then
+            brought the model into 3ds Max, where I handled the texturing and
+            V-Ray rendering to create realistic, high-quality visuals. To make
+            the concept fully interactive, I developed a real-time walkthrough
+            in Unity and exported it as a WebGL build, allowing users to explore
+            the space directly in their browser with no installation required.
           </p>
         </div>
       </section>
 
-      {/* Image Section */}
+      {/* First Image Section */}
       <section
         style={{
           backgroundColor: '#0a0a0a',
@@ -154,37 +234,26 @@ export default function Project4() {
           display: 'flex',
           justifyContent: 'flex-start',
           alignItems: 'center',
-          gap: '1rem',
-          flexWrap: 'wrap',
           width: '100%',
           marginLeft: 'auto',
           marginRight: 'auto',
           maxWidth: '1200px',
         }}
       >
-        <div
+        <img
+          src="/in2.jpg"
+          alt="Beach House interior visualization"
+          loading="lazy"
           style={{
-            flex: '1 1 60%',
-            display: 'flex',
-            justifyContent: 'flex-start',
-            alignItems: 'center',
-            gap: '1rem',
-            flexWrap: 'wrap',
+            display: 'block',
+            maxWidth: '1200px',
+            width: '100%',
+            height: 'auto',
           }}
-        >
-          <img
-            src="/in2.jpg"
-            alt="Beach House"
-            style={{
-              maxWidth: '1200px',
-              width: '100%',
-              height: 'auto',
-            }}
-          />
-        </div>
+        />
       </section>
 
-      {/* Image Section */}
+      {/* Second Image Section */}
       <section
         style={{
           backgroundColor: '#0a0a0a',
@@ -192,47 +261,34 @@ export default function Project4() {
           display: 'flex',
           justifyContent: 'flex-start',
           alignItems: 'center',
-          gap: '1rem',
-          flexWrap: 'wrap',
           width: '100%',
           marginLeft: 'auto',
           marginRight: 'auto',
           maxWidth: '1200px',
         }}
       >
-        <div
+        <img
+          src="/in1.jpg"
+          alt="Beach House exterior visualization"
+          loading="lazy"
           style={{
-            flex: '1 1 60%',
-            display: 'flex',
-            justifyContent: 'flex-start',
-            alignItems: 'center',
-            gap: '1rem',
-            flexWrap: 'wrap',
+            display: 'block',
+            maxWidth: '1200px',
+            width: '100%',
+            height: 'auto',
           }}
-        >
-          <img
-            src="/in1.jpg"
-            alt="Beach House"
-            style={{
-              maxWidth: '1200px',
-              width: '100%',
-              height: 'auto',
-            }}
-          />
-        </div>
+        />
       </section>
 
-      {/* Footer */}
-      <section
+      {/* Footer Spacing */}
+      <footer
         style={{
           backgroundColor: '#0a0a0a',
           padding: '2rem 4vw',
           textAlign: 'center',
           color: 'white',
         }}
-      >
-        
-      </section>
+      />
     </div>
   );
 }
